@@ -15,10 +15,11 @@
     font-size: 18px;
   }
   #wrap {
-    background: url(images/bg.jpg);
+    background: url(./images/bg.jpg);
     border-radius:9px;
     border: solid 3px #feb004;
-    padding: 0 55px 0 0 ;
+		padding: 0 55px 0 0 ;
+		direction: rtl;
   }
   h1 {
     text-indent: -1000px;
@@ -87,7 +88,16 @@
     border: none;
     background: transparent;
   }
-/* iPads (portrait and landscape) ----------- */
+</style>
+<!--[if IE 7 ]>
+<style>
+	#wrap {
+	padding-bottom: 10px;
+	}
+</style>
+<![endif]-->
+<!--[if !(IE) ]>
+<style>
 @media only screen 
 and (min-width : 600px) 
 and (max-width : 1000px) {
@@ -135,7 +145,6 @@ and (max-width : 1000px) {
     height: auto;
   }
 }
-/* medium smartphones, portrait ----------- */
 @media only screen 
 and (max-width : 600px) {
   body {
@@ -183,9 +192,10 @@ and (max-width : 600px) {
 }
 </style>
 
+<![endif]-->
 </head>
 
-<body dir="rtl">
+<body>
   <div id=wrap>
     
 <div id="top">
@@ -212,6 +222,5 @@ and (max-width : 600px) {
 עמית גר בתל-אביב, אב לשתי בנות, ומשלב בין כתיבה לניהול עסק גלובלי בתחום היהלומים. 
 </div>
 <img src="images/read-page.png" />
-<hr>
 </div></body>
 </html>
