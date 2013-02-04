@@ -1,0 +1,56 @@
+@charset "utf-8";
+#btn{
+	background-image:url(images/snd.png);
+	background-repeat:no-repeat;
+	background-color: transparent;
+	height:54px;
+	border:none;
+	float:left;
+	margin-top: 20px;
+	width: 141px;
+	cursor: pointer;
+	margin-left: 36px;
+}
+
+#formcontainer 
+		{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	color:#FFF;
+	direction:rtl;
+	text-align: left;
+	width: 320px;
+	margin-left: 60px;
+	margin-top: 30px;
+}
+
+input#styled {
+	background-image: url(images/box.png);
+	width: 192px;
+	padding: 2px;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 29px;
+	border: 0px;
+	font-weight: bold;
+	margin-bottom: 12px;
+	background-color: transparent;
+}
+
+textarea#styled {
+	background-image: url(images/boxmsg.png);
+	width: 190px;
+	height: 80px;
+	border: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	padding: 2px;
+	float: left;
+}
+#addinfo {
+	color:#333;
+	text-align: left;
+	margin-top: 5px;
+	float: left;
+	width: 100px;
+	margin-left: 5px;
+}
