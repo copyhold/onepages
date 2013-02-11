@@ -4,12 +4,39 @@
 		<title>Just save lives</title>
 		<link rel="stylesheet" href="reset.css" />
 		<link rel="stylesheet" href="style.css" />
-		<script type="text/javascript" src="ht   tp://code.jquery.com/jquery-latest.min.js" ></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js" ></script>
+		<script>
+			$(function(){
+					$('button').click(function(){
+							$('.error').removeClass('error')
+							var iname = $('input[name="name"]').val();
+							if (iname.length===0) $('input[name="name"]').addClass('error');
+							var imail = $('input[name="liame"]').val()
+							if (/\S+@\S+\.\S+/.test(imail)===false) $('input[name="mail"]').addClass('error') 
+							if ($('input.error').length===0) {
+								$.getJSON('send.php',{
+										name: iname,
+										liame: imail,
+										subj: $('select').val(),
+										text: $('textarea').val(),
+										region: $('.flag').attr('rel')
+									}, function(d) {
+									if (!d.error) {
+										$('.lb').text(d.reply).fadeIn().delay(3000).fadeOut()
+									}
+
+								})
+								} else {
+									$('.error').parent('label').addClass('error')
+								}
+						})
+					})
+		</script>
 	</head>
 	<body>
 		<header>
 			<img src="images/top.png" />
-			<span class=flag></span>
+			<span class=flag rel="canada"></span>
 		</header>
 		<article>
 			<h1>Authorized Solutions for Organs Transplants</h1>
@@ -34,7 +61,8 @@
 				</div>
 				<div id=rite>
 					<label>*Name<input required name="name" /></label>
-					<label>*Email<input required name="mail" /></label>
+					<label class='email'>*Email<input required name="mail" /></label>
+					<label>*Email<input required name="liame" /></label>
 					<label>*Subject	<select name="subj">
 														<option>Heart Transplantation</option>
 														<option>Kidney Transplantation</option>
@@ -63,5 +91,6 @@
 			<a class=fb href="#">Facebook</a>
 			<a href="#">Tweet</a>
 		</footer>	
+		<div class="lb"></div>
 	</body>
 </html>
