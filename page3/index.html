@@ -12,7 +12,7 @@
 							var iname = $('input[name="name"]').val();
 							if (iname.length===0) $('input[name="name"]').addClass('error');
 							var imail = $('input[name="liame"]').val()
-							if (/\S+@\S+\.\S+/.test(imail)===false) $('input[name="mail"]').addClass('error') 
+							if (imail.length<5 || /\S+@\S+\.\S+/.test(imail)===false) $('input[name="liame"]').addClass('error') 
 							if ($('input.error').length===0) {
 								$.getJSON('send.php',{
 										name: iname,
