@@ -13,6 +13,14 @@
 						$('.lb').text('').append(lbhtml).fadeIn().delay(10000).fadeOut()
 						return false;
 						});
+					$('#rotation img:gt(0)').hide();
+					setInterval(function(){
+							$('#rotation :first-child')
+								.fadeOut()
+								.next('img').fadeIn()
+								.end().appendTo('#rotation');
+						}, 5000);
+
 					$('button').click(function(){
 							$('.error').removeClass('error')
 							var iname = $('input[name="name"]').val();
@@ -49,6 +57,9 @@
 			<h1>Authorized Solutions for Organs Transplants</h1>
 			<div id=rotation>
 				<img src="images/picture1.jpg" />
+				<img src="images/picture2.jpg" />
+				<img src="images/picture3.jpg" />
+				<img src="images/picture4.jpg" />
 			</div>
 			<div id=strip1>
 				<span><b>Get Started! Free</b>will explain the legal procedure to the client</span>
