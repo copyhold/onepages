@@ -216,16 +216,8 @@ button {
 	border: 1px solid #000;
 	margin-top: 20px;
 }
-.lb .pages {
-	font-family: Tahoma;
-	font-size: 18px;
-	line-height: 1.4em;
-	width: 400px;
-	margin: 0 auto;
-	background: transparent;
-}
-.lb .pages {
-	display: block;
+.pages {
+	display: none;
 }
 #services nav {
 	background: url(images/botmenubg.png) 0 0 repeat-x;

@@ -9,9 +9,9 @@
 			$(function(){
 					$('.lb').click(function(){ $(this).fadeOut() })
 					$('#services nav a').click(function(){
-						var lbhtml = $('#services .pages[rel="'+$(this).attr('href').substr(1)+'"]').clone();
-						$('.lb').text('').append(lbhtml).fadeIn().delay(10000).fadeOut()
-						return false;
+						$('#services .pages').hide()
+						$('#services .pages[rel="'+$(this).attr('href').substr(1)+'"]').show();
+						//return false;
 						});
 					$('#rotation img:gt(0)').hide();
 					setInterval(function(){
@@ -95,7 +95,7 @@
 					<nav>
 						<a href="http://demkindima.wix.com/justsavelives_1#!kidney/ccef">Kidney Transplant</a>
 						<a href="http://demkindima.wix.com/justsavelives_1#!heart/cmbd">Heart Transplant</a>
-						<a href="http://demkindima.wix.com/justsavelives_1#!liver/c21qv">Liver Transplant</a>
+						<a href="#liver">Liver Transplant</a>
 						<a href="#about">About Us</a>
 					</nav>
 					<h2>Services</h2>
@@ -106,6 +106,14 @@
 						<p>Company "Leshem Shamaim" -  the Israeli Company for Saving Lives and for Medical Tourism Ltd." Engages in providing consulting services and solutions regarding organ transplants abroad, in full accordance with the Organ Transplantation Law.<br>
 						The company has over ten years of experience in the field, and to its credit are many patients whose lives were saved, and who are ready to provide their recommendation and opinion of the company's services to any new client who is interested.<br>
 						The company works with a staff of senior and highly professional physicians. One of our main advisors is a professor and a renowned expert in the field of organ transplants. In addition, the company has exclusive agreements with various hospitals around the world.</p>
+					</section>
+					<section class="pages" rel="liver">
+						<h2>Liver</h2>
+						<p>The liver is a resilient, maintenance-free organ that's easy to ignore - until something goes wrong. Because of its wide-ranging responsibilities, the liver often comes under attack by viruses, toxic substances (including alcohol), contaminants and disease.
+							<p>Even when it is under siege however, the liver is very slow to complain. Often, people with liver problems will be completely unaware because they may have few, if any, symptoms. The liver is such a stalwart organ that it will continue working even when two thirds of it has been damaged by scarring (cirrhosis).
+							 
+								<p>While there have been major advances in treating liver diseases, there are no cures. That's why it's important to take steps to prevent liver disease, such as making healthy lifestyle choices and getting immunized against viruses that can cause liver disease.
+									<p>To learn more about how your liver works and how you can prevent some of the most common forms of liver disease, click on the links to the left.
 					</section>
 				</div>
 			</section>
