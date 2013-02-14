@@ -21,14 +21,13 @@ header {
 	text-align: center;
 	z-index: 1;
 }
-header img {
+header img.header {
 	position: absolute;
 	display: block;
 	margin: 0px 0 0 -493px;
 	left: 50%;
 }
-header span {
-	background: url(images/flag.jpg) 0 0 no-repeat;
+header .flag {
 	top: 43px;
 	left: 50%;
 	margin: 0 0 0 160px;

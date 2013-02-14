@@ -1,3 +1,6 @@
+<?php
+if (!isset($_GET['region'])) exit;
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -62,8 +65,8 @@
 	</head>
 	<body>
 		<header>
-			<img src="images/top.png" />
-			<span class=flag rel="canada"></span>
+			<img class="header" src="images/top.png" />
+			<img class="flag" rel="<?php echo $region = filter_input(INPUT_GET, 'region', FILTER_SANITIZE_EMAIL);?>" src="images/<?php echo $region;?>.jpg" />
 		</header>
 		<article>
 			<h1>Certified Solutions for Organs Transplatation</h1>
