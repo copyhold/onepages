@@ -24,7 +24,7 @@ header {
 header img {
 	position: absolute;
 	display: block;
-	margin: 26px 0 0 -493px;
+	margin: 15px 0 0 -493px;
 	left: 50%;
 }
 header span {
@@ -58,7 +58,7 @@ h1 {
 	background: #fff;
 	border: solid #000;
 	border-width: 1px 0 0 1px;
-	height: 285px;
+	height: 245px;
 	overflow: hidden;
 }
 #rotation img {
@@ -105,7 +105,7 @@ h1 {
 	text-align: center;
 	margin: 20px 0 0 0;
 }
-section {
+article > section {
 	background: #fff;
 	margin-top: 79px;
 	padding: 0 11px 11px;
@@ -238,7 +238,7 @@ button {
 	border: none;
 }
 #services h2 {
-	line-height: 100px;
+	line-height: 50px;
 	font-size: 34px;
 	margin-left: 15px;
 }
@@ -257,15 +257,23 @@ footer {
 	padding: 15px 0;
 	z-index: 100;
 }
-footer a {
+footer p {
+	width: 960px;
+	margin: 0 auto;
+}
+footer p > * {
 	display: inline-block;
 	line-height: 20px;
 	padding: 0 10px;
 	color: #fff;
+	float: left;
 }
-footer a.fb {
-	border: solid #fff;
-	border-width: 0 1px 0 1px;
+footer a {
+	color: #fff;
+	text-decoration: underline;
+}
+footer span {
+	float: right;
 }
 .lb {
 	position: fixed;
