@@ -14,7 +14,7 @@ a {
 }
 header {
 	background: #052135;
-	height:254px;
+	height:239px;
 	border-bottom:2px solid #fbfbfb;
 	box-shadow: 0 2px 9px 0px #000;
 	position: relative;
@@ -24,12 +24,12 @@ header {
 header img {
 	position: absolute;
 	display: block;
-	margin: 15px 0 0 -493px;
+	margin: 0px 0 0 -493px;
 	left: 50%;
 }
 header span {
 	background: url(images/flag.jpg) 0 0 no-repeat;
-	top: 58px;
+	top: 43px;
 	left: 50%;
 	margin: 0 0 0 160px;
 	width:  69px;
@@ -245,6 +245,7 @@ button {
 #services p {
 	font-size: 12px;
 	margin: 0 15px 20px 15px;
+	line-height: 17px;
 }
 footer {
 	bottom: 0;
