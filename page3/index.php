@@ -51,7 +51,7 @@ if (!isset($_GET['region'])) exit;
 										region: $('.flag').attr('rel')
 									}, function(d) {
 									if (!d.error) {
-										location.href = '/thank-you'
+										location.href = '/thank-you.html'
 										//$('.lb').text(d.reply).fadeIn().delay(3000).fadeOut()
 									}
 
@@ -179,9 +179,25 @@ All the necessary Medications.<br>
 		</article>
 		<footer>
 			<p>
-				<cite>&copy; Copyright 2013 JustSaveLives, LLC All Rights Reserved</cite><span>For more information, please visit us on <a href="http://transplantationforum.com/" >our site</a></span>
+				<cite>&copy; Copyright 2013 JustSaveLives, LLC All Rights Reserved</cite><span>For more information, please visit us on <a href="http://www.justsavelives.com/" target="_blank" >our site</a></span>
 			</p>
 		</footer>	
 		<div class="lb"></div>
+<!-- Google Code for Remarketing tag -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 987646217;
+var google_conversion_label = "3vioCP-F0gQQiZL51gM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/987646217/?value=0&amp;label=3vioCP-F0gQQiZL51gM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
 	</body>
 </html>

@@ -10,8 +10,8 @@ Subject: {$_GET['subj']}
 Message: {$_GET['text']}
 EOM;
 
-$headers = "Cc:optiwisemcc@gmail.com
+$headers = "Cc:optiwisemcc@gmail.com,boris.volfman@leshem-shamaim.com
 
 From: {$_GET['liame'] }\n\n";
-mail('optiwisemcc@gmail.com', 'Guidance Request from ' . $region, $message, $headers);
+mail('boris.volfman@leshem-shamaim.com', 'Guidance Request from ' . $region, $message, $headers);
 echo json_encode(array("reply"=>"Your request is being processed."));
