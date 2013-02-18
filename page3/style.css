@@ -35,6 +35,10 @@ header .flag {
 	height:  46px;
 	position: absolute;
 }
+.he header .flag {
+	right:50%;
+	margin: 0 0 0 -200px;
+}
 article {
 	margin:-120px auto 43px;
 	width: 970px;
@@ -52,6 +56,9 @@ h1 {
 	text-shadow: 0 1px 3px #000;
 	filter: dropshadow(color=#000, offx=0, offy=1);
 	letter-spacing: 3px;
+}
+.he h1 {
+	direction: rtl;
 }
 #rotation {
 	background: #fff;
@@ -80,6 +87,10 @@ h1 {
 	height: 125px;
 	margin:-36px -14px 0 0;
 }
+.he #strip1 {
+	background: url(images/middlestrip-rtl.png) -18px 0 no-repeat;
+	margin:-36px 0 0 -12px;
+}
 #strip1 span {
 	text-align: center;
 	float: right;
@@ -89,6 +100,10 @@ h1 {
 	margin: 49px 0 0 15px;
 	height: 100px;
 }
+.he #strip1 span {
+	float: left;
+}
+
 #strip1 span b {
 	display: block;
 	font-size: 31px;
@@ -104,6 +119,9 @@ h1 {
 	text-align: center;
 	margin: 20px 0 0 0;
 }
+.he #strip1 h2 {
+	float: right;
+}
 article > section {
 	background: #fff;
 	margin-top: 79px;
@@ -117,8 +135,16 @@ article > section {
 	width: 460px;
 	height: 357px;
 }
+.he #left {
+	float: right;
+}
 #left > * {
 	margin-left: 15px;
+}
+.he #left > * {
+	margin-left: 0;
+	margin-right: 15px;
+	direction: rtl;
 }
 #left h2 {
 	line-height: 72px;
@@ -134,6 +160,9 @@ article > section {
 	width: 215px;
 	outline: none;
 	font-size: 13px;
+}
+.he #left span {
+	background-position: 100% 0;
 }
 #left h3 {
 	padding-top: 25px;
@@ -169,12 +198,19 @@ hr {
 	margin: 0 0 0 10px;
 	float: left;
 }
+.he #rite  {
+	margin:0;
+	direction: rtl;
+}
 label {
 	margin: 20px 0 0 30px;
 	display: block;
 	color: #fff;
 	width: 410px;
 	height: 30px;
+}
+.he label {
+	margin: 20px 30px 0 0;
 }
 select, textarea, input { 
 	height: 30px;
@@ -183,6 +219,9 @@ select, textarea, input {
 	text-indent: 5px;
 	float: right;
 	width: 210px;
+}
+.he select, .he textarea, .he input { 
+	float: left;
 }
 .error {
 	color: red;
@@ -236,13 +275,17 @@ button {
 	line-height: 44px;
 	width: 230px;
 }
+.he .pages , 
+.he #services nav a {
+	direction: rtl;
+}
 #services nav a:first-child {
 	border: none;
 }
 #services h2 {
 	line-height: 50px;
 	font-size: 34px;
-	margin-left: 15px;
+	margin: 0 15px;
 }
 #services p {
 	font-size: 12px;
