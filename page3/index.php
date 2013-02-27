@@ -1,10 +1,19 @@
 <?php
 if (!isset($_GET['region'])) exit;
+$titlesuffix = array(
+	'canada' => 'Canada',
+	'california' => 'California',
+	'new-york' => 'New York',
+	'south-africa' => 'South Africa',
+	'uk' => 'United Kingdom',
+	'texas' => 'Texas'
+);
+$titlesuffix = isset($titlesuffix[$_GET['region']]) ? $titlesuffix[$_GET['region']] : '';
 ?>
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Just save lives</title>
+	<title>Just save lives <?php echo $titlesuffix;?></title>
 		<link rel="stylesheet" href="reset.css" />
 		<link rel="stylesheet" href="style.css" />
 <!--[if lt IE 9]>
@@ -69,7 +78,7 @@ if (!isset($_GET['region'])) exit;
 			<img class="flag" rel="<?php echo $region = filter_input(INPUT_GET, 'region', FILTER_SANITIZE_EMAIL);?>" src="images/<?php echo $region;?>.jpg" />
 		</header>
 		<article>
-			<h1>Certified Solutions for Organs Transplatation</h1>
+			<h1>Certified Solutions for Organs Transplantation</h1>
 			<div id=rotation>
 				<img src="images/picture1.jpg" />
 				<img src="images/picture2.jpg" />
@@ -84,12 +93,14 @@ if (!isset($_GET['region'])) exit;
 				<div id=left>
 					<h2>Our Expertise</h2>
 					<span>Professional Guidance</span>
-					<span>Locating Expert Physicians</span>
-					<span>Legal Guidance</span>
 					<span>Insurance Reimbursements</span>
+					<span>Locating Hospitals and Experts</span>
+					<span>Legal Guidance</span>
 					<hr />
 					<h3>Organ Transplant</h3>
-					<p>People who need an organ transplant often have to wait a long time for one. Doctors must match donors to recipients to reduce the risk of transplant rejection. This is when the recipient's body turns against the new organ, causing it to fail. People who have transplants must take drugs the rest of their lives to help keep their bodies from rejecting the new organ. Our company can give you solution in kidney, heart, liver transplant.</p>
+					<p>If your kidney, heart or liver has failed, and you need an organ transplant, you are in the right place!!<br>
+We employ professionals and consultants, specializing in organ transplantation that will provide you with all the necessary services for organ transplants, all services are provided in accordance with the applicable law.
+</p>
 				</div>
 				<div id=rite>
 					<label>*Name<input required name="name" /></label>
@@ -115,63 +126,81 @@ if (!isset($_GET['region'])) exit;
 					</nav>
 					<section class="pages" rel="services" style="display: block;">
 						<a name="services"></a>
-						<h2>Services</h2>
-						<p>will explain the legal procedure to the client, answer any questions, and make sure the client is knowingly signing and executing this contract, without any coercion and after having fully understood the consequences will explain the legal procedure to the client, answer any questions, and make sure the client is knowingly signing and executing this contract, without any coercion and after will explain the legal procedure to the client, answer any questions, and make sure the client is knowingly signing and executing this contract, without any coercion and after</p>
+						<h2>Our Professional Services</h2>
+						<p>
+Each step of your transplant trip is planned and managed; you will not waste any time or money. Whatever your needs will be - we will do our best to satisfy them. We are with you throughout the journey to make it, easy as possible.
+ <p>
+We direct and guide each patient in gathering all medical documents needed for the transplant surgery and refer them to any required or missing medical examination. We also assist in collecting all the necessary material and refer the patient to a specialist physician affiliated with our company. The referred physician's authority will serve to create a comprehensive medical opinion in any language required for the purposes of the transplant, which will meet the needs of the hospital's medical staff and the hospital's requirements.
+ <p>
+From the arrival of the patient and his or hers family to the relevant country where will the transplant organ performed, accompanied them professional person from the company who will collect them from the airport, places at the hotel, arrange transportation, accompany each visit at the hospital to ensure that the patient receives all required services and help in translation, lender will be there for you to feel as comfortable as possible in a foreign country during such difficult period.
+ <p>
+Choose us, Choose life.<br>
+Leshem Shamaim
 					</section>
 					<section rel="about" class="pages">
 						<a name="about"></a>
 						<h2>About Us</h2>
-						<p>Company "Leshem Shamaim" -  the Israeli Company for Saving Lives and for Medical Tourism Ltd." Engages in providing consulting services and solutions regarding organ transplants abroad, in full accordance with the Organ Transplantation Law.<br>
-						The company has over ten years of experience in the field, and to its credit are many patients whose lives were saved, and who are ready to provide their recommendation and opinion of the company's services to any new client who is interested.<br>
-						The company works with a staff of senior and highly professional physicians. One of our main advisors is a professor and a renowned expert in the field of organ transplants. In addition, the company has exclusive agreements with various hospitals around the world.</p>
+						<p>Leshem Shamaim - A company for saving lives and for medical tourism engages in providing consulting services and solutions regarding organ transplants, in full accordance with the organ transplantation law.
+ <p>
+We have over ten years of experience in the field, and to our credit are many patients whose lives were saved, and who are ready to provide their recommendation and opinion of our services to any new client who is interested.<br>
+ We work with a staff of senior and highly professional physicians & well known expert professors in the field of organ transplants. In addition, we have exclusive agreements with various hospitals around the world; all authorized with the highest standards for organ transplantations.<br>
+Our principle understands that we dealing with clients with medical problems, so the service they receive should be in accordance, any client who turns to us getting the highest level of service, he will receive warm and personal service by our team for the entire process (medical advice, medical summery, consulting for suitable hospitals and medical stuff and etc.).
+ <p>
+We will advise for solution for organ transplant from a cadaver donor or live altruistic donor at the shortest time as possible.<br>
+Choose us, Choose life.<br>
+Just Save Lives
 					</section>
 					<section class="pages" rel="liver">
 						<h2>Liver Transplant</h2>
-						<p>The liver is a resilient, maintenance-free organ that's easy to ignore - until something goes wrong. Because of its wide-ranging responsibilities, the liver often comes under attack by viruses, toxic substances (including alcohol), contaminants and disease.
-							<p>Even when it is under siege however, the liver is very slow to complain. Often, people with liver problems will be completely unaware because they may have few, if any, symptoms. The liver is such a stalwart organ that it will continue working even when two thirds of it has been damaged by scarring (cirrhosis).
-							 
-								<p>While there have been major advances in treating liver diseases, there are no cures. That's why it's important to take steps to prevent liver disease, such as making healthy lifestyle choices and getting immunized against viruses that can cause liver disease.
-									<p>To learn more about how your liver works and how you can prevent some of the most common forms of liver disease, click on the links to the left.
+<p>Our company offers full organ transplant services for liver abroad. Each package is all inclusive and designed to accommodate your ever need.
+<p>We will make all the necessary arrangements before and during the travel in the relevant country.
+<p>
+•  Liver transplant<br>
+•  2 tickets for business flight round trip.<br>
+•  Full Hotel(4/5 star) expenses.<br>
+•  All the necessary medical tests and preparing before the transplant.<br>
+•  Legal advice by an attorney who work for the company and responsible for the legality of the transplant in the relevant country.<br>
+•  The accompaniment of a person which language relevant for the patient, the obligation of contact person to help the patient and his family whenever required for their comfort in foreign country such as translation, meeting at the airport, transportation from the hospital and back, setting appointments with doctors, support for meetings at the hospital, help orientation in restaurants, shops, tours, etc..<br>
+•  Medical support of doctors in the same country where the patient supposed to pass the organ transplant, during all the stay.<br>
+•  ICU'S after the transplant and during the stay in any case if necessary<br>
+•  Necessary period for recovering in hospital after transplant.<br>
+•  All the necessary Medications.
+
 					</section>
 <section class="pages" rel="heart">
 						<h2>Heart Transplant</h2>
-<p>Our company will make all the necessary arrangements before and during the travel in the relevant country.
+<p>Our company offers full organ transplant services for heart abroad. Each package is all inclusive and designed to accommodate your ever need.
+<p>We will make all the necessary arrangements before and during the travel in the relevant country.
 <p>
-liver/heart transplant<br>
-2 tickets for business flight round trip.<br>
- 
-Hotel(4/5 star) expenses on basis of bed and breakfast for 2,5 month.<br>
- 
-All the necessary medical tests and preparing before the transplant.<br>
- 
-Legal advice by an attorney who work for the company and responsible for the legality of the transplant in the relevant country.<br>
- 
-The accompaniment of a person which language relevant for the patient, the obligation of contact person to help the patient and his family whenever required for their comfort in foreign country such as translation, meeting at the airport, transportation from the hospital and back, setting appointments with doctors, support for meetings at the hospital, help orientation in restaurants, shops, tours, etc..<br>
- 
-Medical support of doctors in the same country where the patient supposed to pass the organ transplant, during all the stay.<br>
- 
-ICU'S after the transplant and during the stay any case if necessary<br>
- 
-Necessary period for recovering in hospital after transplant.<br>
- 
-All the necessary Medications.
- <p>
-From statistic the average waiting time for suitable organ, from the moment the patient came to the relevant country is 1.5 month.					
+•  Heart transplant<br>
+•  2 tickets for business flight round trip.<br>
+•  Full Hotel(4/5 star) expenses.<br>
+•  All the necessary medical tests and preparing before the transplant.<br>
+•  Legal advice by an attorney who work for the company and responsible for the legality of the transplant in the relevant country.<br>
+•  The accompaniment of a person which language relevant for the patient, the obligation of contact person to help the patient and his family whenever required for their comfort in foreign country such as translation, meeting at the airport, transportation from the hospital and back, setting appointments with doctors, support for meetings at the hospital, help orientation in restaurants, shops, tours, etc..<br>
+•  Medical support of doctors in the same country where the patient supposed to pass the organ transplant, during all the stay.<br>
+•  ICU'S after the transplant and during the stay in any case if necessary<br>
+•  Necessary period for recovering in hospital after transplant.<br>
+•  All the necessary Medications.
 </section>
 
 <section class="pages" rel="kidney">
 						<h2>Kidney Transplant</h2>
-<p>Our company will make all the necessary arrangements before and during the travel in the relevant country.
-<p>kidney transplant<br>
-2 tickets for business flight round trip.<br>
-Hotel(4/5 star) expenses on basis of bed and breakfast for 1 month.<br>
-All the necessary medical tests and preparing before the transplant.<br>
-Legal advice by an attorney who work for the company and responsible for the legality of the transplant in the relevant country.<br>
-The accompaniment of a person which language relevant for the patient, the obligation of contact person to help the patient and his family whenever required for their comfort in foreign country such as translation, meeting at the airport, transportation from the hospital and back, setting appointments with doctors, support for meetings at the hospital, help orientation in restaurants, shops, tours, etc..<br>
-Medical support of doctors in the same country where the patient supposed to pass the organ transplant, during all the stay.<br>
-Dialyze during all the stay.<br>
-10 days of recovering in hospital after transplant.<br>
-All the necessary Medications.<br>			
+<p>Our company offers full organ transplant services for kidney abroad. Each package is all inclusive and designed to accommodate your ever need.
+<p>We will make all the necessary arrangements before and during the travel in the relevant country.
+<p>
+•  Kidney transplant<br>
+•  2 tickets for business flight round trip.<br>
+•  Full Hotel (4/5 star) expenses.<br>
+•  All the necessary medical tests and preparing before the transplant.<br>
+•  Legal advice by an attorney who work for the company and responsible for the legality of the transplant in the relevant country.<br>
+•  The accompaniment of a person which language relevant for the patient, the obligation of contact person to help the patient and his family whenever required for their comfort in foreign country such as translation, meeting at the airport, transportation from the hospital and back, setting appointments with doctors, support for meetings at the hospital, help orientation in restaurants, shops, tours, etc..<br>
+•  Medical support of doctors in the same country where the patient supposed to pass the organ transplant, during all the stay.<br>
+•  Dialyze during all the stay.<br>
+•  10 days of recovering in hospital after transplant.<br>
+•  All the necessary Medications.
+
+ 
 </section>
 
 				</div>

@@ -59,6 +59,7 @@ h1 {
 }
 .he h1 {
 	direction: rtl;
+	text-indent: 100px;
 }
 #rotation {
 	background: #fff;
@@ -148,18 +149,19 @@ article > section {
 }
 #left h2 {
 	line-height: 72px;
-	font-size: 30px;
+	font-size: 28px;
 	text-shadow: 0 1px 1px #666;
 }
 #left span {
 	height: 40px;
 	line-height: 40px;
-	text-indent: 45px;
+	text-indent: 40px;
 	background: url(images/plus.png) 0 0 no-repeat;
 	float: left;
 	width: 215px;
 	outline: none;
-	font-size: 13px;
+	font-size: 11px;
+	font-weight: bold;
 }
 .he #left span {
 	background-position: 100% 0;
@@ -177,9 +179,9 @@ article > section {
 	font-weight: normal;
 }
 #left p {
-	line-height: 16px;
+	line-height: 17px;
 	margin-right: 80px;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 hr {
@@ -288,7 +290,7 @@ button {
 	margin: 0 15px;
 }
 #services p {
-	font-size: 12px;
+	font-size: 14px;
 	margin: 0 15px 20px 15px;
 	line-height: 17px;
 }

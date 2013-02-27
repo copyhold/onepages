@@ -68,7 +68,7 @@
 		</header>
 		<article>
 			<h1>
-פתרונות להשתלות איברים
+ייעוץ ותמיכה בתהליך השתלות איברים בחו"ל
 </h1>
 			<div id=rotation>
 				<img src="images/picture1.jpg" />
@@ -78,102 +78,83 @@
 			</div>
 			<div id=strip1>
 				<span><b>
-הרשם עכשיו! חינם
-</b>נספק מענה לכל שאלותיך</span>
-				<h2>אנו מספקים פתרונות</h2>
+מלא/י את פרטיך
+</b>מומחה יצור איתך קשר ויפרט את המשך התהליך</span>
+				<h2>ייעוץ וליווי על ידי מומחים</h2>
 	    </div>
 			<section>
 				<div id=left>
-					<h2>תמיכה וייעוץ כל הדרך</h2>
-					<span>נקודת זכות</span>
-					<span>נקודת זכות</span>
-					<span>נקודת זכות</span>
-					<span>נקודת זכות</span>
+					<h2>פתרונות מלאים לתהליך ההשתלה</h2>
+					<span>ליווי מקצועי</span>
+					<span>הדרכה משפטית</span>
+					<span>איתור רופאים מומחים</span>
+					<span>החזרי ביטוח</span>
 					<hr />
-					<h3>הדרכה מקצועית</h3>
-					<p>People who need an organ transplant often have to wait a long time for one. Doctors must match donors to recipients to reduce the risk of transplant rejection. This is when the recipient's body turns against the new organ, causing it to fail. People who have transplants must take drugs the rest of their lives to help keep their bodies from rejecting the new organ. Our company can give you solution in kidney, heart, liver transplant.</p>
+					<h3>הכוונה מקצועית מלאה</h3>
+					<p>אנשים הזקוקים להשתלת איברים לעתים צריכים לחכות זמן רב . רופאים חייבים להתאים תורמים לנמענים כדי להפחית את הסיכון לדחיית השתלה.  כאשר הגוף של הנמען מתנגד לקלוט האיבר החדש, זה גורם להשתלה להיכשל. אנשים שעברו השתלה צריכים לקחת תרופות כל חייהם כדי לסייע לשמור על גופם מדחיית האיבר החדש.
+<br>
+החברה שלנו יכולה לתת לך פתרון בהשתלת כליות, לב, כבד.
+</p>
 				</div>
 				<div id=rite>
 					<label>* שם<input required name="name" /></label>
 					<label class='email'>*אימייל<input dir="ltr" required name="mail" /></label>
 					<label>* אימייל<input required name="liame" /></label>
 					<label>* נושא<select name="subj">
-														<option>Heart Transplantation</option>
-														<option>Kidney Transplantation</option>
-														<option>Liver Transplantation</option>
-														<option>Other</option>
+														<option>השתלת לב</option>
+														<option>השתלת כליה</option>
+														<option>השתלת כבד</option>
+														<option>אחר</option>
 													</select>
 												</label>
-					<label>* תגובתך<textarea name="comm"></textarea></label>
-					<button>הצתרף</button>
+					<label>מידע נוסף<textarea name="comm"></textarea></label>
+					<button>צרו איתי קשר עכשיו</button>
 				</div>
 				<hr />
 				<div id=services>
 					<nav>
-						<a href="#kidney">Kidney Transplant</a>
-						<a href="#heart">Heart Transplant</a>
-						<a href="#liver">Liver Transplant</a>
-						<a href="#about">About Us</a>
+						<a href="#about">אודות</a>
+                        <a href="#liver">השתלת כבד</a>
+                        <a href="#heart">השתלת לב</a>
+                        <a href="#kidney">השתלת כליה</a>
 					</nav>
 					<section class="pages" rel="services" style="display: block;">
 						<a name="services"></a>
-						<h2>Services</h2>
-						<p>will explain the legal procedure to the client, answer any questions, and make sure the client is knowingly signing and executing this contract, without any coercion and after having fully understood the consequences will explain the legal procedure to the client, answer any questions, and make sure the client is knowingly signing and executing this contract, without any coercion and after will explain the legal procedure to the client, answer any questions, and make sure the client is knowingly signing and executing this contract, without any coercion and after</p>
+						<h2>שירות</h2>
+				<p>החברה תכוון, תדריך ותלווה את החולה באיסוף כל החומר הנדרש, תפנה לרופא מומחה מטעם החברה, אשר יחבר חוות דעת רפואית מקיפה בכל שפה הנדרשת לצורך ההשתלה, התענה על דרישות הצוות הרפואי בבית החולים. <p>
+                        בנוסף מרגע הגעת החולה ומשפחתו למדינה הרלוונטית שבה יעבור את ניתוח השתלת האיבר, יתלווה אליהם אדם מקצועי מטעם החברה אשר ידאג לאיסוף משדה התעופה, ימקם בבית המלון, ידאג להסעות, יתלווה בכל ביקור בבית החולים על מנת לוודא שהחולה יקבל את כל השירותים הנדרשים ויעזור בתרגומים, המלווה יהיה שם בשבילכם על מנת שתרגישו נוח ככל האפשר במדינה זרה ולהקל עליכם לעבור הליך לא קל ומרגש זה. 
 					</section>
 					<section rel="about" class="pages">
 						<a name="about"></a>
-						<h2>About Us</h2>
-						<p>Company "Leshem Shamaim" -  the Israeli Company for Saving Lives and for Medical Tourism Ltd." Engages in providing consulting services and solutions regarding organ transplants abroad, in full accordance with the Organ Transplantation Law.<br>
-						The company has over ten years of experience in the field, and to its credit are many patients whose lives were saved, and who are ready to provide their recommendation and opinion of the company's services to any new client who is interested.<br>
-						The company works with a staff of senior and highly professional physicians. One of our main advisors is a professor and a renowned expert in the field of organ transplants. In addition, the company has exclusive agreements with various hospitals around the world.</p>
+						<h2>על החברה</h2>
+						<p>חברת "לשם שמיים -החברה הישראלית להצלת חיים ותיירות מרפא בע"מ" עוסקת במתן שירותי ייעוץ ופתרון בנוגע להשתלות איברים בחו"ל ,והכל רק על פי המותר בחוק השתלת איברים. לחברה ניסיון בתחום של יותר מ-10 שנים. ולזכותה חולים רבים אשר חייהם ניצלו,ומוכנים לתת המלצות וחוות דעת על שירותי החברה לכל לקוח חדש המעוניין בכך.<br>
+החברה עובדת עם צוות רופאים בכירים ברמה מקצועית גבוהה.<br>
+יועץ של החברה הוא פרופסור ומומחה בעל שם בתחום להשתלות איברים.<br>
+בנוסף לחברה  הסכמים בלעדיים עם בתי חולים בעולם ורופאים בין המובילים בתחום השתלות בעולם.<br>
+עיקרון החברה הוא הבנה שהעיסוק מתבצע מול לקוחות עם בעיות רפואיות ולכן היחס צריך להיות בהתאם,כל לקוח אשר פונה אלינו מקבל שירות ברמה הגבוהה ביותר,שירות חם ומבין הכולל ליווי צמוד ע"י צוות שלנו למשך כל התהליך(הסעות,סיכום רפואי,יעוץ רפואי ומשפטי...).<br>
+החברה מתחייבת לתת פתרון להשתלה מתורם מן המת או מתורם אלטרואיסטי בזמן הקצר ביותר במידת האפשר.</p>
 					</section>
 					<section class="pages" rel="liver">
-						<h2>Liver Transplant</h2>
-						<p>The liver is a resilient, maintenance-free organ that's easy to ignore - until something goes wrong. Because of its wide-ranging responsibilities, the liver often comes under attack by viruses, toxic substances (including alcohol), contaminants and disease.
-							<p>Even when it is under siege however, the liver is very slow to complain. Often, people with liver problems will be completely unaware because they may have few, if any, symptoms. The liver is such a stalwart organ that it will continue working even when two thirds of it has been damaged by scarring (cirrhosis).
-							 
-								<p>While there have been major advances in treating liver diseases, there are no cures. That's why it's important to take steps to prevent liver disease, such as making healthy lifestyle choices and getting immunized against viruses that can cause liver disease.
-									<p>To learn more about how your liver works and how you can prevent some of the most common forms of liver disease, click on the links to the left.
+						<h2>השתלת כבד</h2>
+						<p>השתלת כבד היא השתלת איברים שמטרתה החלפתו של כבד חולה באלוגרפט כבד בריא.
+הטכניקה הנפוצה ביותר הנמצאת כיום בשימוש היא השתלה אורתוטופית בה הכבד החולה מוצא מגוף המושתל, והאיבר הנתרם מושם במיקום האנטומי המדויק ממנו הוצא הכבד המקורי. השתלת כבד היא כיום אופציית טיפול מקובלת עבור מחלות כבד בשלב סופי וכשל תפקודי מוחלט של הכבד<p>
+מרבית החולים המחכים להשתלה הינם חולים עם שחמת כתוצאה ממחלת כבד אלכוהולית, הפטיטיס ויראלי כרוני של הכבד, וסרטן הכבד. חולים עם שחמת כבד אלכוהולית חייבים להיגמל מאלכוהול לצורך ההשתלה. חולים עם הפטיטיס ויראלי לעתים צריכים לקבל תרופות אנטי ויראליות כדרך להימנע מהדבקה חוזרת אשר בחלק מן המקרים נובעת מהישארות הוירוס ברקמות אחרות מלבד הכבד. לגבי חולים עם סרטן ראשוני של הכבד, התוצאות הינן פחות טובות בהשתלת כבד מאשר תוצאות ההשתלה על רקע מחלת כבד אחרת- ועל כן יש קריטריונים באשר לגודל הגידול אשר תחתיו יש אינדיקציה לעבור השתלה.
+
 					</section>
 <section class="pages" rel="heart">
-						<h2>Heart Transplant</h2>
-<p>Our company will make all the necessary arrangements before and during the travel in the relevant country.
-<p>
-liver/heart transplant<br>
-2 tickets for business flight round trip.<br>
- 
-Hotel(4/5 star) expenses on basis of bed and breakfast for 2,5 month.<br>
- 
-All the necessary medical tests and preparing before the transplant.<br>
- 
-Legal advice by an attorney who work for the company and responsible for the legality of the transplant in the relevant country.<br>
- 
-The accompaniment of a person which language relevant for the patient, the obligation of contact person to help the patient and his family whenever required for their comfort in foreign country such as translation, meeting at the airport, transportation from the hospital and back, setting appointments with doctors, support for meetings at the hospital, help orientation in restaurants, shops, tours, etc..<br>
- 
-Medical support of doctors in the same country where the patient supposed to pass the organ transplant, during all the stay.<br>
- 
-ICU'S after the transplant and during the stay any case if necessary<br>
- 
-Necessary period for recovering in hospital after transplant.<br>
- 
-All the necessary Medications.
- <p>
-From statistic the average waiting time for suitable organ, from the moment the patient came to the relevant country is 1.5 month.					
+						<h2>השתלת לב</h2>
+<p>ניתוח השתלת לב הינו טיפול המבוצע במצבי אי ספיקת לב קשים שגורמים לכך שהלב בקושי מתפקד, ואין הזרמת דם טובה לרקמות השונות. השתלת הלב מבוצעת בכל טווח הגילאים, החל מיילודים ועד אנשים מבוגרים וקשישים. המצבים הנפוצים ביותר המובילים להשתלת לב הם קרדיומיופתיה, אוטמים מרובים, מחלות מסתמים, מחלות לב מולדות, הפרעות קצב קטלניות וגידולי לב.<p>
+לעיתים, לא תמיד ניתן להשתיל לב, או צריך להמתין לפני ביצוע ההשתלה, בשל בעיות רפואיות שונות. במצב זה מבצעים השתלת לב מלאכותי זמני עד לביצוע ההשתלה. בנוסף, לעיתים קיימים גם גורמים המהווים באופן כללי התוויה נגד השתלות, כמו לדוגמא זיהום, גידולים ממאירים ומחלות מרובות. התוויה ייחודית נגד השתלת לב היא לחץ דם ריאתי גבוה – מצב נפוץ הגורם לאי ספיקת לב, אך גם עלול להוביל לאי ספיקת לב ימין גם לאחר ההשתלה – במצבים אלו, לא מבצעים השתלת לב.
+			
 </section>
 
 <section class="pages" rel="kidney">
-						<h2>Kidney Transplant</h2>
-<p>Our company will make all the necessary arrangements before and during the travel in the relevant country.
-<p>kidney transplant<br>
-2 tickets for business flight round trip.<br>
-Hotel(4/5 star) expenses on basis of bed and breakfast for 1 month.<br>
-All the necessary medical tests and preparing before the transplant.<br>
-Legal advice by an attorney who work for the company and responsible for the legality of the transplant in the relevant country.<br>
-The accompaniment of a person which language relevant for the patient, the obligation of contact person to help the patient and his family whenever required for their comfort in foreign country such as translation, meeting at the airport, transportation from the hospital and back, setting appointments with doctors, support for meetings at the hospital, help orientation in restaurants, shops, tours, etc..<br>
-Medical support of doctors in the same country where the patient supposed to pass the organ transplant, during all the stay.<br>
-Dialyze during all the stay.<br>
-10 days of recovering in hospital after transplant.<br>
-All the necessary Medications.<br>			
+						<h2>השתלת כליה</h2>
+<p>השתלת כליה היא תחליף לדיאליזה וישנן כמה סיבות לכך שהשתלת הכליה עדיפה על פני דיאליזה:
+ההשתלה משפרת בהרבה את איכות החיים יחסית לדיאליזה, חולים המטופלים בדיאליזה צריכים להגיע שלוש פעמים בשבוע לטיפול, לעומתם אצל מושתלי כליה החיים כמעט רגילים.<br>
+השתלה עשויה להאריך את חיי המושתל, אנשים שעברו השתלה נשארו בחיים יותר מאשר אלו שנשארו ברשימת ההמתנה.<br>
+מסיבה כלכלית: ההשתלה עם תרופות מדכאות חיסון עולה פחות מאשר דיאליזה לכל החיים.
+		
 </section>
 
 				</div>
@@ -181,7 +162,7 @@ All the necessary Medications.<br>
 		</article>
 		<footer>
 			<p>
-				<cite>&copy; Copyright 2013 JustSaveLives, LLC All Rights Reserved</cite><span>For more information, please visit us on <a href="http://www.justsavelives.com/" target="_blank" >our site</a></span>
+				<cite>&copy; Copyright 2013 JustSaveLives, LLC All Rights Reserved</cite><span>למידע נוסף בקר <a href="http://www.justsavelives.com/" target="_blank" >באתר שלנו</a></span>
 			</p>
 		</footer>	
 		<div class="lb"></div>
