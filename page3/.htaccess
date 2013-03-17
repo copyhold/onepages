@@ -1,3 +1,0 @@
-RewriteEngine On
-RewriteRule ^(israel)$ hebrew.php?region=israel [l]
-RewriteRule ^(canada|california|new-york|south-africa|uk|texas)$ index.php?region=$1 [nc]
