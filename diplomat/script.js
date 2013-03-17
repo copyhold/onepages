@@ -49,12 +49,13 @@ $(function () {
     },
     beforeSubmit: function () {
       $("form > p").fadeOut();
-      $('.lname,.fname,.phone,.tz,.recommend,.phone,.message,.file').each(function () {
+      $('.lname,.fname,.phone,.email,.phone,.file').each(function () {
         $(this).removeClass('error');
         if ($(this).find('input,textarea').val().length === 0) {
           $(this).addClass('error');
         }
       });
+			if (/[0-9]{10}/.test($('.tz input').val())) $('.tz').addClass('error');
       var ext = $('.file input').val().split('.').pop();
       if (['png','doc','odt','docx','rtf','pdf','jpg','ods'].indexOf(ext)===-1) {
         $('.file').addClass('error');

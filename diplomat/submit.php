@@ -1,4 +1,14 @@
 <?php
+$repl = array(
+  'fname'   => $_POST['lname'] . ' ' . $_POST['fname'],
+  'phone'   => $_POST['phoneprefix'] . '-' . $_POST['phone'],
+  'recomm'  => $_POST['recommend'],
+  'message' => $_POST['message'],
+  'email'		=> $_POST['email'],
+  'tz'      => $_POST['tz'],
+  'JOBname' => $_POST['jobname'],
+  'JOB'     => $_POST['jobname'] . '[' . $_POST['jobid'] . ']',
+);
 $message = strtr("
 <div dir='rtl'>
 <h2>JOB</h2>
@@ -7,6 +17,8 @@ $message = strtr("
 <dd>fname</dd>
 <dt>ת.ז.</dt>
 <dd>tz</dd>
+<dt>אימייל</dt>
+<dd>email</dd>
 <dt>טלאפון</dt>
 <dd>phone</dd>
 <dt>ממליץ</dt>
@@ -15,14 +27,7 @@ $message = strtr("
 <dd>message</dd>
 </dl>
 </div>
-",array(
-  'fname'   => $_POST['lname'] . ' ' . $_POST['fname'],
-  'phone'   => $_POST['phoneprefix'] . '-' . $_POST['phone'],
-  'recomm'  => $_POST['recommend'],
-  'message' => $_POST['message'],
-  'tz'      => $_POST['tz'],
-  'JOB'     => $_POST['jobname'] . '[' . $_POST['jobid'] . ']',
-));
+",$repl);
 if (is_uploaded_file($_FILES['resume']['tmp_name'])) {
   $newname = './'.$_FILES['resume']['name'];
   move_uploaded_file($_FILES['resume']['tmp_name'],$newname);
@@ -39,19 +44,20 @@ if (!$xhr)  echo '<textarea>';
 echo json_encode(array('success'=>$result));
 if (!$xhr)  echo '</textarea>';
 
+// now send confirmation to user
+$confirm = new AttachmentEmail($_POST['email'],'בקשתך לדיפלומט התקבלה',strtr('<div dir="rtl"><h1>תודה שפנית ל-DIPLOMAT בע"ם</h1><p>קיבלנו את פניתך למשרה JOBname</p><cite>צוות דיפלומט</cite></div>',$repl),'./logo.jpg');
+$confirm->mail();
 
 
-
-
-
+exit;
 
 
 
 
 class AttachmentEmail {
-  private $from = 'jobtab@mail.com';
-  private $from_name = 'facebook';
-  private $reply_to = 'jobtab@mail.com';
+  private $from = 'jobs@diplomat.co.il';
+  private $reply_to = 'jobs@diplomat.co.il';
+  private $from_name = 'DIPLOMAT';
   private $to = '';
   private $subject = '';
   private $message = '';
