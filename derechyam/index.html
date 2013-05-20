@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="./stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <!--[if IE]>
+      <link href="./stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>
+var h5 = 'NAV article aside header footer section figure figcaption'.split(' ');
+while (document.createElement(h5.pop()).tagName!=='NAV') {}
+
+// gallery
+setInterval(function(){
+		var $now = $('footer img:visible');
+		var $next= $now.next();
+		if ($next.length===0) $next = $('footer img:eq(0)');
+		$now.fadeOut();
+		$next.fadeIn();
+		}, 5000);
+</script>
+
+</head>
+<body>
+	<header>
+		<h1>
+קורס סקיפרים בדרך היום - תתחיל לחיות!
+		</h1>
+		<img src="./images/logo.png" >
+	</header>
+	<article>
+		<h2>
+בואו להשיט יאכטה ללא צורך ברישיון!
+		</h2>
+		<p>
+מה תלמד: קורס השייט המזורז של דרך הים ילמד אותך את כל יסודות הימאות ותוך שבועיים תוכל לצאת להפליג על יאכטה מרגשת לבד!
+		</p>
+		<p class=strong>
+	אם גם אתה חולם על הים, הצטרף אלינו לקורס משיטי יאכטות!	
+		</p>
+		<h2>
+		רק בדרך הים:
+		</h2>
+		<ul>
+			<li>
+			חשףךלגכ לחכףךשל ףשך לחכף ךשלחג שדגכף ךשד לחגכףך שךלחשג ףךכלח  שדג כףשךלגחכ שדחג כחליחדגכ יכלחשדיכל חשדג
+			</li>
+			<li>
+			חשףךלגכ לחכףךשל ףשך לחכף ךשלחג שדגכף ךשד לחגכףך שךלחשג ףךכלח  שדג כףשךלגחכ שדחג כחליחדגכ יכלחשדיכל חשדג
+			</li>
+			<li>
+			חשףךלגכ לחכףךשל ףשך לחכף ךשלחג שדגכף ךשד לחגכףך שךלחשג ףךכלח  שדג כףשךלגחכ שדחג כחליחדגכ יכלחשדיכל חשדג
+			</li>
+		</ul>
+		<h3>
+			אז קדימה שחרר את החבל
+		</h3>
+	</article>
+	<form>
+		<h3>
+	להפלגת ניסיון ללא התחייבות:
+		</h3>
+		<label for="name">שם מלא*:<input required name=name /></label>
+		<label for="phone">טלפון*:<input required type="phone" dir=ltr ></label>
+		<label for="mail">אימייל*:<input required type="mail" dir=ltr ></label>
+		<label for=mess>הערות:<textarea></textarea></label>
+		<label for="email" class=email>email<input type="text" name=email /></label>
+		<button type=submit>אני רוצה הפלגת ניסיון</button>
+		<p>
+	או התקשרו: 1-800-30-40-60
+		</p>
+	</form>
+	<hr>
+	<footer>
+		<img class=active src="./images/img1.jpg">
+		<img src="./images/img1.jpg">
+		<img src="./images/img1.jpg">
+		<img src="./images/img1.jpg">
+	</footer>
+</body>
+</html>

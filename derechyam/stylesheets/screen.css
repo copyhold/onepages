@@ -1,0 +1,343 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 24, ../sass/screen.scss */
+article, header, footer, nav {
+  display: block;
+}
+
+/* line 25, ../sass/screen.scss */
+html {
+  background: 50% 0 no-repeat;
+}
+@media only screen and (max-width: 320px) {
+  /* line 25, ../sass/screen.scss */
+  html {
+    background-image: url(../images/bg-m.jpg);
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 1023px) {
+  /* line 25, ../sass/screen.scss */
+  html {
+    background-image: url(../images/bg-t.jpg);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 25, ../sass/screen.scss */
+  html {
+    background-image: url(../images/bg.jpg);
+  }
+}
+
+/* line 31, ../sass/screen.scss */
+body {
+  direction: rtl;
+  font-family: Arial, Helvetika, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  margin: 36px auto 40px;
+  background: #1b98c9;
+  background: rgba(27, 152, 201, 0.6);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+@media only screen and (max-width: 320px) {
+  /* line 31, ../sass/screen.scss */
+  body {
+    width: 320px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 1023px) {
+  /* line 31, ../sass/screen.scss */
+  body {
+    width: 768px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 31, ../sass/screen.scss */
+  body {
+    width: 900px;
+  }
+}
+
+/* line 45, ../sass/screen.scss */
+header {
+  background: 0 0 repeat-x;
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  -ms-border-radius: 6px 6px 0 0;
+  -o-border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 0 0;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAABfCAYAAAApka0OAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQ2RjVFNjQzQzBDODExRTI5MzJFRUM4OTdDMjlDNTE1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQ2RjVFNjQ0QzBDODExRTI5MzJFRUM4OTdDMjlDNTE1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDZGNUU2NDFDMEM4MTFFMjkzMkVFQzg5N0MyOUM1MTUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDZGNUU2NDJDMEM4MTFFMjkzMkVFQzg5N0MyOUM1MTUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz68jOZQAAAAgUlEQVR42nyRwQ2AMAwDLcSDL/vvwCZswAIM0RylpVFTAZ8qsl3HSabtOJkMKT/kR7miVBVTjyUiq7sy/+vizs+ajhtL0KyKzqK4Ynz4mSdQyJJc/PSIgRj8CH0VxK9TvmQZWXfBt8aI8UOglt68ortHG5qODYuV36hI1mXeLwEGANruyge1hnuuAAAAAElFTkSuQmCC");
+  height: 94px;
+}
+@media only screen and (min-width: 321px) and (max-width: 1023px) {
+  /* line 45, ../sass/screen.scss */
+  header {
+    height: 80px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAABQCAIAAABXpYiMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkMxQzE3QjgzQzBDODExRTJCRTVDRTEyRjI0OTBDM0ZCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkMxQzE3Qjg0QzBDODExRTJCRTVDRTEyRjI0OTBDM0ZCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QzFDMTdCODFDMEM4MTFFMkJFNUNFMTJGMjQ5MEMzRkIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QzFDMTdCODJDMEM4MTFFMkJFNUNFMTJGMjQ5MEMzRkIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5hx7zOAAAAaklEQVR42mxP2xHAIAzi0v1X6URdoDu00JhE7evDA4FEtHXbjYKdkgmOdGx353SNLCwveORT7/jkLfvVE/1Q8R5LPwavOagy7x1zf/jQ6B49/zor/8P3fP/v8Atd0y0HZJ+mpT/5YrgEGACGa7QHI5m1rgAAAABJRU5ErkJggg==");
+  }
+}
+/* line 55, ../sass/screen.scss */
+header img {
+  float: left;
+  margin: -31px 0 0 25px;
+}
+/* line 59, ../sass/screen.scss */
+header h1 {
+  height: 60px;
+  float: right;
+  margin: 24px 14px 0 -200px;
+  text-indent: -1000px;
+  overflow: hidden;
+  width: 100%;
+  background: 100% 0 no-repeat;
+}
+@media only screen and (max-width: 320px) {
+  /* line 59, ../sass/screen.scss */
+  header h1 {
+    background-image: url(../images/h1-m.png);
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 1023px) {
+  /* line 59, ../sass/screen.scss */
+  header h1 {
+    background-image: url(../images/h1-t.png);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 59, ../sass/screen.scss */
+  header h1 {
+    background-image: url(../images/h1.png);
+  }
+}
+
+/* line 73, ../sass/screen.scss */
+h3,
+h2 {
+  color: #fdfc84;
+  font-size: 24px;
+}
+
+/* line 77, ../sass/screen.scss */
+article {
+  margin: 20px 20px 0 0;
+  font-size: 16px;
+  width: 562px;
+  line-height: 22px;
+  border-left: 1px solid #d8edf6;
+  float: right;
+  height: 330px;
+  position: relative;
+}
+/* line 86, ../sass/screen.scss */
+article li {
+  list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkQwNDY0RTBEQzE3QzExRTI5MTA3RkQxNURCQTA4ODY0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkQwNDY0RTBFQzE3QzExRTI5MTA3RkQxNURCQTA4ODY0Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RDA0NjRFMEJDMTdDMTFFMjkxMDdGRDE1REJBMDg4NjQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RDA0NjRFMENDMTdDMTFFMjkxMDdGRDE1REJBMDg4NjQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4bXoD/AAAAtElEQVR42hyNPQ7CMAyFX9reg5mFAyA6cBA2kBhYEbdATAzAxs7EzsYBWBihJ2iatknz0xgXS8+WPr9nC3DF/j4FxBKwY0C/iepLkq6fIva3GZAcGIJYIMd2AyK9ywC3IXQMJUOebAnBQym7yghqBDIYkvwAMRLa1kFKM0o4UQA1uwMrQmuPsjRQtS0yY9qjMWHvff9fNo1DpYbzOIuhfz/buay6Bacm1oZXmoprnp8ePwEGAA9SaWofRU2GAAAAAElFTkSuQmCC");
+  list-style-position: outside;
+  margin: 0 15px 0 0;
+}
+/* line 91, ../sass/screen.scss */
+article p.strong {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+/* line 95, ../sass/screen.scss */
+article h3 {
+  font-size: 26px;
+  text-shadow: 1px 1px 2px #000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+}
+
+/* line 104, ../sass/screen.scss */
+form {
+  margin: 20px 0 0 20px;
+  width: 295px;
+  float: left;
+  height: 330px;
+  position: relative;
+}
+/* line 110, ../sass/screen.scss */
+form h3 {
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+/* line 114, ../sass/screen.scss */
+form p {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  white-space: nowrap;
+  font-size: 24px;
+}
+
+/* line 122, ../sass/screen.scss */
+label {
+  display: block;
+  height: 30px;
+  margin: 0 0 11px 0;
+  font-size: 21px;
+  line-height: 30px;
+  text-indent: 20px;
+}
+/* line 129, ../sass/screen.scss */
+label.email {
+  display: none;
+}
+
+/* line 134, ../sass/screen.scss */
+input,
+textarea {
+  height: 65px;
+  float: left;
+  border: 2px solid #2b8fa6;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  width: 181px;
+  box-shadow: 2px 2px 3px 0 #9e9e9e inset;
+  background: #d8e4f4;
+  resize: none;
+}
+
+/* line 144, ../sass/screen.scss */
+input {
+  height: 26px;
+}
+
+/* line 147, ../sass/screen.scss */
+button {
+  border: none;
+  width: 231px;
+  height: 70px;
+  background: 100% 15px no-repeat;
+  color: #1b2855;
+  font-size: 21px;
+  text-align: right;
+  line-height: 40px;
+  text-indent: 10px;
+  font-weight: bold;
+  float: left;
+}
+@media only screen and (max-width: 320px) {
+  /* line 147, ../sass/screen.scss */
+  button {
+    background-image: url(../images/button-m.png);
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 1023px) {
+  /* line 147, ../sass/screen.scss */
+  button {
+    background-image: url(../images/button-t.png);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 147, ../sass/screen.scss */
+  button {
+    background-image: url(../images/button.png);
+  }
+}
+
+/* line 163, ../sass/screen.scss */
+hr {
+  clear: both;
+  height: 1px;
+  border: none;
+  margin: 0;
+  background: none;
+}
+
+/* line 170, ../sass/screen.scss */
+footer {
+  background: url(../images/imageshadow.png) 0 0 no-repeat;
+  margin: 36px auto 0;
+  clear: both;
+  width: 758px;
+  height: 375px;
+  position: relative;
+}
+/* line 177, ../sass/screen.scss */
+footer img {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 38px;
+}
+/* line 182, ../sass/screen.scss */
+footer img.active {
+  display: block;
+}
