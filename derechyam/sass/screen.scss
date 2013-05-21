@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-$break-small: 320px;
+$break-small: 420px;
 $break-large: 1024px;
 
 @mixin respond-to($media) {
@@ -38,7 +38,7 @@ body {
 	background: #1b98c9;
 	background: rgba(27,152,201,0.6);
 	@include border-radius(6px);
-	@include respond-to(mob) 	{ width: 320px;}
+	@include respond-to(mob) 	{ margin-bottom: 0; width: 320px;}
 	@include respond-to(tab)	{width: 768px;}
 	@include respond-to(pc) 	{width: 900px;}
 }
@@ -55,6 +55,14 @@ header {
 	img {
 		float: left;
 		margin: -31px 0 0 25px;
+		width: auto;
+		@include respond-to(tab)  {
+			height: 102px;
+		}
+		@include respond-to(mob)  {
+			margin-top: -15px;
+			height: 102px;
+		}
 	}
 	h1 {
 		height: 60px;
@@ -64,8 +72,8 @@ header {
 		overflow: hidden;
 		width: 100%;
 		background: 100% 0 no-repeat;
-		@include respond-to(mob) 	{ background-image:url(../images/h1-m.png) ;}
-		@include respond-to(tab) 	{ background-image:url(../images/h1-t.png) ;}
+		@include respond-to(mob) 	{ background-image:url(../images/h1-mob.png) ;margin-top: 10px; height: 83px; }
+		@include respond-to(tab) 	{ background-image:url(../images/h1-tab.png) ; }
 		@include respond-to(pc) 	{ background-image:url(../images/h1.png) ;}
 	}
 }
@@ -73,16 +81,22 @@ h3,
 h2 {
 color:#fdfc84;
 font-size: 24px;
+	@include respond-to(tab) {
+		font-size: 20px;
+	}
 }
 article {
 	margin: 20px 20px 0 0;
 	font-size: 16px;
+
 	width: 562px;
 	line-height: 22px;
 	border-left: 1px solid #d8edf6;
 	float: right;
 	height: 330px;
 	position: relative;
+  @include respond-to(tab)  { font-size: 13px ;width: 478px;height: 302px;}
+	@include respond-to(mob)   { font-size: 14px ;width: 300px; height: 433px; }
 	li {
 		list-style-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkQwNDY0RTBEQzE3QzExRTI5MTA3RkQxNURCQTA4ODY0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkQwNDY0RTBFQzE3QzExRTI5MTA3RkQxNURCQTA4ODY0Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RDA0NjRFMEJDMTdDMTFFMjkxMDdGRDE1REJBMDg4NjQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RDA0NjRFMENDMTdDMTFFMjkxMDdGRDE1REJBMDg4NjQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4bXoD/AAAAtElEQVR42hyNPQ7CMAyFX9reg5mFAyA6cBA2kBhYEbdATAzAxs7EzsYBWBihJ2iatknz0xgXS8+WPr9nC3DF/j4FxBKwY0C/iepLkq6fIva3GZAcGIJYIMd2AyK9ywC3IXQMJUOebAnBQym7yghqBDIYkvwAMRLa1kFKM0o4UQA1uwMrQmuPsjRQtS0yY9qjMWHvff9fNo1DpYbzOIuhfz/buay6Bacm1oZXmoprnp8ePwEGAA9SaWofRU2GAAAAAElFTkSuQmCC");
 		list-style-position: outside;
@@ -99,17 +113,20 @@ article {
 		bottom: 0;
 		right: 0;
 		color: #fff;
+		@include respond-to(tab) { font-size: 22px; }
 	}
 }
 form {
   margin: 20px 0 0 20px ;
 	width: 295px;
+	@include respond-to(tab) { width: 248px; height: 302px;}
+	@include respond-to(mob) { height: 293px;margin-top: 10px; }
 	float: left;
 	height: 330px;
 	position: relative;
 	h3 {
 white-space: nowrap;
-margin-bottom: 10px;
+margin: 0 10px 10px 0;
 	}
 	p {
 		position: absolute;
@@ -117,6 +134,8 @@ margin-bottom: 10px;
 		right: 20px;
 		white-space: nowrap;
 		font-size: 24px;
+		@include respond-to(tab) { font-size: 20px; }
+		@include respond-to(tab) { font-size: 22px; }
 	}
 }
 label {
@@ -129,14 +148,22 @@ label {
 	&.email {
 		display: none;
 	}
+	@include respond-to(tab) { font-size: 17px; }
+	@include respond-to(mob) { margin-bottom: 8px; font-size: 19px;font-weight: normal; }
 }
 input,
 textarea {
 	height: 65px;
 	float: left;
 	border: 2px solid #2b8fa6;
-	@include border-radius(4px);
+	@include border-radius(7px);
 	width: 181px;
+	@include respond-to(mob) {
+		width: 164px;
+	}
+	@include respond-to(tab) {
+		width: 125px;
+	}
 	box-shadow: 2px 2px 3px 0 #9e9e9e inset;
 	background: #d8e4f4;
 	resize: none;
@@ -156,8 +183,8 @@ button {
 	text-indent: 10px;
 	font-weight: bold;
 	float: left;
-		@include respond-to(mob) 	{ background-image:url(../images/button-m.png) ;}
-		@include respond-to(tab) 	{ background-image:url(../images/button-t.png) ;}
+		@include respond-to(mob) 	{ background-position: 100% 7px; height: 50px; width: 208px; font-size: 18px; background-image:url(../images/button-m.png) ;}
+		@include respond-to(tab) 	{ background-image:url(../images/button-t.png) ;font-size: 18px; width:197px;}
 		@include respond-to(pc) 	{ background-image:url(../images/button.png) ;}
 }
 hr {
@@ -182,5 +209,27 @@ footer {
 		&.active {
 			display: block;
 		}
+		@include respond-to(mob) {
+			width: 294px;
+			height: 146px;
+			left: 13px;
+		}
+		@include respond-to(tab) {
+			width: 577px;
+			height: 288px;
+			left: 33px;
+		}
+	}
+	@include respond-to(mob) {
+		margin-top: 10px;
+		width: 320px;
+		height: 165px;
+		background-image: url(../images/imageshadow-m.png);
+	}
+	@include respond-to(tab) {
+		margin-top: 20px;
+		width: 644px;
+		height: 320px;
+		background-image: url(../images/imageshadow-t.png);
 	}
 }
