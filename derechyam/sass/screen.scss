@@ -23,10 +23,10 @@ $break-large: 1024px;
 @import "compass/css3";
 article, header, footer, nav {display: block; }
 html {
-	background: 50% 0 no-repeat;
+	direction: ltr;
+	background: url(../images/bg.jpg) 50% 0 no-repeat;
 	@include respond-to(mob) 	{ background-image:url(../images/bg-m.jpg) ;}
 	@include respond-to(tab) 	{ background-image:url(../images/bg-t.jpg) ;}
-	@include respond-to(pc) 	{ background-image:url(../images/bg.jpg) ;}
 	}
 body {
 	direction: rtl;
@@ -37,10 +37,11 @@ body {
 	margin: 36px auto 40px;
 	background: #1b98c9;
 	background: rgba(27,152,201,0.6);
+	width: 900px;	
+	
 	@include border-radius(6px);
 	@include respond-to(mob) 	{ margin-bottom: 0; width: 320px;}
 	@include respond-to(tab)	{width: 768px;}
-	@include respond-to(pc) 	{width: 900px;}
 }
 header {
 	background: 0 0 repeat-x;
@@ -71,10 +72,9 @@ header {
 		text-indent: -1000px;
 		overflow: hidden;
 		width: 100%;
-		background: 100% 0 no-repeat;
+		background: url(../images/h1.png) 100% 0 no-repeat;
 		@include respond-to(mob) 	{ background-image:url(../images/h1-mob.png) ;margin-top: 10px; height: 83px; }
 		@include respond-to(tab) 	{ background-image:url(../images/h1-tab.png) ; }
-		@include respond-to(pc) 	{ background-image:url(../images/h1.png) ;}
 	}
 }
 h3,
@@ -135,7 +135,7 @@ margin: 0 10px 10px 0;
 		white-space: nowrap;
 		font-size: 24px;
 		@include respond-to(tab) { font-size: 20px; }
-		@include respond-to(tab) { font-size: 22px; }
+		@include respond-to(mob) { font-size: 22px; }
 	}
 }
 label {
@@ -183,9 +183,9 @@ button {
 	text-indent: 10px;
 	font-weight: bold;
 	float: left;
-		@include respond-to(mob) 	{ background-position: 100% 7px; height: 50px; width: 208px; font-size: 18px; background-image:url(../images/button-m.png) ;}
-		@include respond-to(tab) 	{ background-image:url(../images/button-t.png) ;font-size: 18px; width:197px;}
-		@include respond-to(pc) 	{ background-image:url(../images/button.png) ;}
+	background-image:url(../images/button.png) ;
+	@include respond-to(mob) 	{ background-position: 100% 7px; height: 50px; width: 208px; font-size: 18px; background-image:url(../images/button-m.png) ;}
+	@include respond-to(tab) 	{ background-image:url(../images/button-t.png) ;font-size: 18px; width:197px;}
 }
 hr {
 clear: both;
@@ -193,6 +193,7 @@ height: 1px;
 border: none;
 margin: 0;
 background: none;
+visibility: hidden;
 }
 footer {
 	background: url(../images/imageshadow.png) 0 0 no-repeat;
